@@ -1,4 +1,4 @@
-// ImGui library v1.46 WIP
+// ImGui library v1.47 WIP
 // Headers
 
 // See imgui.cpp file for documentation.
@@ -18,7 +18,7 @@
 #include <string.h>         // memset, memmove, memcpy, strlen, strchr, strcpy, strcmp
 #include <functional>       // std::function
 
-#define IMGUI_VERSION       "1.46 WIP"
+#define IMGUI_VERSION       "1.47 WIP"
 
 // Define assertion handler.
 #ifndef IM_ASSERT
@@ -954,7 +954,7 @@ struct ImGuiTextEditCallbackData
     ImGuiKey            EventKey;       // Key pressed (Up/Down/TAB)            // Read-only
     char*               Buf;            // Current text                         // Read-write (pointed data only)
     int                 BufSize;        //                                      // Read-only
-    bool                BufDirty;       // Set if you modify Buf directly       // Write
+    bool                BufDirty;       // Must set if you modify Buf directly  // Write
     int                 CursorPos;      //                                      // Read-write
     int                 SelectionStart; //                                      // Read-write (== to SelectionEnd when no selection)
     int                 SelectionEnd;   //                                      // Read-write
