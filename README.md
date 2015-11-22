@@ -8,7 +8,3 @@
 
 - Support stateful user functions
     - commit: [cc7988676150d7eeae42f43366748b4a0c066c2e](https://github.com/usagi/imgui/commit/cc7988676150d7eeae42f43366748b4a0c066c2e)
-
-## License
-
-ImGui++ is licensed under the MIT License, see LICENSE for more information.
