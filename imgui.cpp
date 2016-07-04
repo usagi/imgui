@@ -2015,9 +2015,8 @@ ImGuiContext* ImGui::CreateContext(void* (*malloc_fn)(size_t), void (*free_fn)(v
 
 void ImGui::DestroyContext(ImGuiContext* ctx)
 {
-    void (*free_fn)(void*) = ctx->IO.MemFreeFn;
     ctx->~ImGuiContext();
-    free_fn(ctx);
+    ctx->IO.MemFreeFn(ctx);
     if (GImGui == ctx)
         GImGui = NULL;
 }
